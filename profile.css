@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "lucida grande", Calibri, Arial, sans-serif;
+}
+
+#navigation {
+	overflow: hidden;
+	height: 45px;
+
+	background-color: #a52a2a;
+}
+
+#navigation a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#navigation ul {
+	margin: 7px 0 0 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#navigation ul li {
+	display: inline;
+}
+
+#navigation ul li a {
+	padding: 10px;
+}
+
+#navigation ul li a:hover {
+	background: #5785e0;
+}
+
+.square {
+	width: 450px;
+	float: left;
+	padding: 15px;
+}
+#navigation ul li form {
+	margin-left: 680px;
+	margin-top: -17px;
+}
+#navigation ul li form button {
+margin-left: -38px;
+}

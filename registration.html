@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title></title>
+
+<link rel="stylesheet" type="text/css" href="registration.css">
+  <script type="text/javascript">
+function validateform(){
+
+						var c = document.forms["form"]["email"].value;
+								var emailValid = /^([a-zA-Z0-9\._-]+)@([a-zA-Z0-9]+).([a-z]+)(.[a-z]+)?$/
+							   if(!emailValid.test(c))
+							   {
+							      alert("You have entered an invalid email address!");
+							      return false;
+							   }
+							    return true;
+}
+</script>
+</head>
+<body>
+   <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Reg<span>istration</span></div>
+		</div>
+		<br>
+		<div class="login">
+			<form name="form"action="registration.php" method="post"  onsubmit="return validateform()"  >
+				<input type="text" placeholder="firstname" name="firstname" required><br>
+				<input type="text" placeholder="lastname" name="lastname" required><br>
+				<input type="password" placeholder="password" name="pass" required><br>
+				<input type="text" placeholder="Example@email.com"    name="email"  id="email"    required><br>
+				<input type="date" placeholder="choose date" name="dtime"  id="datepicker">
+				<input type="text" placeholder="phone number" name="pno" ><br>
+				<input type="radio" name="sex" value="male" checked>Male <br>
+        <input type="radio" name="sex" value="female">Female <br>
+				<select name="combo" id="combo">
+					<option value="1">select city..</option>
+					<option value="2">alexandria</option>
+					<option value="3">cairo</option>
+					<option value="4">gizza</option>
+				</select>
+				 <br>
+
+				<select name="combo1" id="combo1">
+					<option value="1">relationship status..</option>
+					<option value="2">married</option>
+					<option value="3">single"forever alone"</option>
+					<option value="4">in a relationship</option>
+					<option value="5">its complicated</option>
+					<option value="6">engaged</option>
+				</select>
+				 <br>
+
+				<button id="button" type="submit">submit</button>
+			</form>
+		</div>
+
+</script>
+</body>
+</html>

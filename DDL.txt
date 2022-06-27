@@ -1,0 +1,17 @@
+CREATE DATABASE facebook;
+use facebook;
+CREATE TABLE user_data(
+    ID INT AUTO_INCREMENT,
+    fname VARCHAR(250) NOT null,
+    lname VARCHAR(250) NOT null,
+    pw VARCHAR(100) NOT null,
+    email VARCHAR(250) UNIQUE NOT null,
+    pno VARCHAR(100) NOT null,
+    gender INT(10),
+    date_of_birth DATE,
+    profile_p VARCHAR(250)NOT null,
+    city VARCHAR(250)NOT null,
+    status VARCHAR(250)NOT null,
+    about_me VARCHAR(250)NOT null,
+    PRIMARY KEY(ID)
+    );
